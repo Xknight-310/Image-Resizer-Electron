@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/settingss.css" />
+    <script src="js/settings.js"></script>
+    <title>Settings - Image Resizer</title>
+  </head>
+  <body class="bg-teal-700">
+    <div class="max-w-xl m-auto h-screen flex flex-col align-center justify-center">
+      <!-- Back button -->
+      <div class="flex flex-col w-full items-center bg-grey-lighter mb-5">
+        <button
+          id="back"
+          class="flex items-center px-4 py-2 bg-white text-gray-500 rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:text-teal-800 back-btn"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+          Back
+        </button>
+      </div>
+      <!-- Settings Card -->
+      <div class="w-full flex flex-col items-center justify-center text-gray-500">
+        <div class="w-96 bg-white rounded-lg shadow-lg p-8 settings-card">
+          <h2 class="text-xl font-bold text-gray-500  mb-6 text-center underline">Settings</h2>
+          <form id="settings-form" class="flex flex-col gap-4">
+            <!-- ouput folder -->
+            <div>
+                <div>
+                    <label for="output-folder-select" class="block text-gray-700 font-medium mb-2">Default Output Folder</label>
+                    <select
+                        id="output-folder-select"
+                        name="output-folder-select"
+                        class="block w-full p-3 rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    >
+                        <option value="homedir">Home Directory</option>
+                        <option value="fileloc">Same as File Location</option>
+                        <option value="custom">Custom...</option>
+                    </select>
+                    </div>
+                    <div id="custom-folder-div" style="display: none;">
+                    <label for="custom-output-folder" class="block text-gray-700 font-medium mb-2">Custom Output Folder</label>
+                    <input
+                        type="text"
+                        id="custom-output-folder"
+                        name="custom-output-folder"
+                        class="block w-full p-3 rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="e.g. C:\Users\YourName\Pictures\Resized"
+                    />
+                </div>
+            </div>
+            <!-- image format -->
+            <div>
+              <label for="output-format" class="block text-gray-700 font-medium mb-2">Default Image Format</label>
+              <select
+                id="output-format"
+                name="output-format"
+                class="block w-full p-3 rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                <option value="jpg">JPG</option>
+                <option value="png">PNG</option>
+                <option value="gif">GIF</option>
+              </select>
+            </div>
+            <!-- theme -->
+            <div>
+              <label for="theme" class="block text-gray-700 font-medium mb-2">Theme</label>
+              <select
+                id="theme"
+                name="theme"
+                class="block w-full p-3 rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                <option value="teal">Teal (Default)</option>
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
+              </select>
+            </div>
+            <button
+              type="submit"
+              class="w-full mt-4 py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-teal-500 hover:bg-teal-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            >
+              Save Settings
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

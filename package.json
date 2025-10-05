@@ -1,0 +1,17 @@
+{
+  "name": "image-resizer",
+  "productName": "Image resizer",
+  "version": "1.0.0",
+  "description": "Desktop app for resizeing images",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Xander Vermeir",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^37.2.4",
+    "resize-img": "^2.0.0",
+    "toastify-js": "^1.12.0"
+  }
+}

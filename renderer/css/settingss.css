@@ -1,0 +1,88 @@
+.settings-card {
+    padding: 25px;
+}
+
+.settings-center {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-btn {
+    position: fixed;
+    top: 24px;
+    left: 24px;
+    z-index: 10;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+input:hover {
+  --tw-text-opacity: 1;
+  color: rgb(16 87 86 / var(--tw-text-opacity));
+}
+
+
+/* Existing styles */
+
+
+/* Add missing Tailwind utility classes */
+.gap-4 {
+    gap: 1rem;
+}
+
+.w-96 {
+    width: 24rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.bg-teal-500 {
+    background-color: #14b8a6;
+}
+
+.hover\:bg-teal-900:hover {
+    background-color: #134e4a;
+}
+
+.text-teal-700 {
+    color: #0f766e;
+}
+
+.focus\:ring-2:focus {
+    box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.focus\:ring-offset-2:focus {
+    outline-offset: 2px;
+}
+
+.focus\:ring-blue-500:focus {
+    box-shadow: 0 0 0 2px #3b82f6;
+}
